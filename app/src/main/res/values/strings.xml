@@ -1,0 +1,23 @@
+<resources>
+    <string name="about_desc">Simple Wiegand-26bit to HEX/DEC Convertor</string>
+    <string name="about_developer">Theodoris Ninis</string>
+    <string name="about_email">theodor.ninis@gmail.com</string>
+    <string name="app_name">Wiegand</string>
+    <string name="card_number">Card Number</string>
+    <string name="facility_code">Facility Code</string>
+    <string name="btn_calc">Calculate</string>
+    <string name="txt_Hex">HEX : </string>
+    <string name="txt_Dec">DEC : </string>
+    <string name="info">Info</string>
+    <string name="about">About</string>
+    <string name="wiegandInfoIntro">The Wiegand interface is a de facto wiring standard which arose from the popularity of Wiegand effect card readers in the 1980s. It is commonly used to connect a card swipe mechanism to the rest of an access control system. The sensor in such a system is often a "Wiegand wire", based on the Wiegand effect, discovered by John R. Wiegand. A Wiegand-compatible reader is normally connected to a Wiegand-compatible security panel.</string>
+    <string name="infoProtocolTitle">Protocol</string>
+    <string name="infoProtocol">The communications protocol used on a Wiegand interface is known as the Wiegand protocol. The original Wiegand format had one parity bit, 8 bits of facility code, 16 bits of ID code, and a trailing parity bit for a total of 26 bits. The first parity bit is calculated from the first 12 bits of the code and the trailing parity bit from the last 12 bits. However, many inconsistent implementations and extensions to the basic format exist.
+
+Many access control system manufacturers adopted Wiegand technology, but were unhappy with the limitations of only 8 bits for site codes (0-255) and 16 bits for card numbers (0-65535), so they designed their own formats with varying complexity of field numbers and lengths and parity checking.
+
+The physical size limitations of the card dictated that a maximum of 37 Wiegand wire filaments could be placed in a standard credit card, as dictated by CR80 or ISO/IEC 7810 standards, before misreads would affect reliability. Therefore, most Wiegand formats used in physical access control are less than 37 bits in length.</string>
+    <string name="version">Version</string>
+
+
+</resources>
