@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 if(counter%2==0)
                     oddParity=1;
 
-String test1=evenParity+""+combine+""+oddParity;
+                String test1=evenParity+""+combine+""+oddParity;
 
                 HexRes.setText(new BigInteger(test1, 2).toString(16).toUpperCase());
                 DecRes.setText(new BigInteger(test1, 2).toString(10));
