@@ -5,6 +5,7 @@ import android.content.IntentSender;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar =getSupportActionBar();
 
         CN=(EditText)findViewById(R.id.CN);
+        CN.setFilters(new InputFilter[]{new CNFCRangeFilter(0, 65535)});
         FC=(EditText)findViewById(R.id.FC);
+        FC.setFilters(new InputFilter[]{new CNFCRangeFilter(0, 255)});
         HexRes=(TextView)findViewById(R.id.textView5);
         DecRes=(TextView)findViewById(R.id.textView6);
 
@@ -52,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
                 String CNbin=String.format("%16s", Integer.toBinaryString(Integer.parseInt(CN.getText().toString()))).replace(' ', '0');
                 String FCbin=String.format("%8s", Integer.toBinaryString(Integer.parseInt(FC.getText().toString()))).replace(' ', '0');
-                //HexRes.setText(CNbin);
-                //DecRes.setText(FCbin);
 
                 String combine=FCbin+CNbin;
                 char[] CN_FN=combine.toCharArray();
