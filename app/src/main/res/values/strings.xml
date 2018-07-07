@@ -3,8 +3,8 @@
     <string name="about_developer">Theodoris Ninis</string>
     <string name="about_email">theodor.ninis@gmail.com</string>
     <string name="app_name">Wiegand</string>
-    <string name="card_number">Card Number</string>
-    <string name="facility_code">Facility Code</string>
+    <string name="card_number">Card Number (0-65535)</string>
+    <string name="facility_code">Facility Code(0-255)</string>
     <string name="btn_calc">Calculate</string>
     <string name="txt_Hex">HEX : </string>
     <string name="txt_Dec">DEC : </string>
