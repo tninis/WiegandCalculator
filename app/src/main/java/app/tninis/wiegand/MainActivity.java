@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         CN.setFilters(new InputFilter[]{new CNFCRangeFilter(0, 65535)});
         FC=(EditText)findViewById(R.id.FC);
         FC.setFilters(new InputFilter[]{new CNFCRangeFilter(0, 255)});
-        HexRes=(TextView)findViewById(R.id.textView5);
-        DecRes=(TextView)findViewById(R.id.textView6);
+        HexRes=(TextView)findViewById(R.id.hex_result);
+        DecRes=(TextView)findViewById(R.id.dec_result);
 
         final Button button = findViewById(R.id.btn_calc);
         button.setOnClickListener(new View.OnClickListener() {
